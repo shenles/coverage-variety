@@ -3,6 +3,9 @@ In 2012, I noticed that influential music publication Pitchfork had at times att
 
 In 2011, which publication reviewed a greater breadth of musicians and genres, relative to the number of reviews published?
 
+## Run Instructions
+This is a fairly old project, and Python 2 is no longer supported. Running is not recommended.
+
 ## Results
 In 2011, Pitchfork published 1166 album reviews, representing 1062 different artists (see `fork_artists.txt`) and 158 different genres.
 Rolling Stone published 456 album reviews, representing 402 different artists (see `stone_artists.txt`) and 79 different genres.
