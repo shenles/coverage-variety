@@ -4,8 +4,8 @@ In 2012, I noticed that influential music publication Pitchfork had at times att
 In 2011, which publication reviewed a greater breadth of musicians and genres, relative to the number of reviews published?
 
 ## Results
-In 2011, Pitchfork published 1166 album reviews, representing 1062 different artists and 158 different genres.
-Rolling Stone published 456 album reviews, representing 402 different artists and 79 different genres.
+In 2011, Pitchfork published 1166 album reviews, representing 1062 different artists (see `fork_artists.txt`) and 158 different genres.
+Rolling Stone published 456 album reviews, representing 402 different artists (see `stone_artists.txt`) and 79 different genres.
 
 91.08 percent of Pitchfork's reviewed albums in 2011 were by unique artists (not covered multiple times in one year), and there were repeats 8.92 percent of the time.
 88.16 percent of Rolling Stone's reviewed albums were by unique artists, and there were repeats 11.84 percent of the time.
