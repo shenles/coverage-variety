@@ -1,7 +1,3 @@
-## Final Proj
-## Leslie Shen
-################
-
 import re
 import urllib
 from sgmllib import SGMLParser  # to help with some HTML
@@ -12,7 +8,6 @@ def getForkURLs():
     of these strings for all pages.
     INPUTS: none
     OUTPUTS: allreviewlinks (list) - list of URL fragments'''
-    # Some code is modeled after DataImport_fixed.py on the class website.
 
     ## Try the test function testForkURLs in TestFunctions.py.
     ## It is identical to this function, but works on a smaller dataset.
@@ -93,7 +88,7 @@ def getForkInfo():
                 # (1) <h1><a href="/artists/1477-fennesz/">Fennesz</a> / <a href="/artists/5272-sakamoto/">Sakamoto</a></h1>
                 # (2) <h1><a href="/artists/27233-the-lonely-island/">The Lonely Island</a></h1>
                 # (3) <div class="info"> <h1>Various Artists</h1>
-            # These nested statements account for each case. This must be done, or Python throws an exception.
+            # These nested statements account for each case. This must be done to avoid an exception being thrown.
             artistMatch = collab_artist_regex.search(myStr, 100, 800)
             if artistMatch == None:
                 artistMatch = artist_regex.search(myStr, 100, 800)

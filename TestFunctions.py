@@ -1,13 +1,6 @@
-## Final Proj Test Functions
-## Leslie Shen
-###########################
-
-# This program is intended for testing.
-# Refer to LeslieShenFinalProj_updated.py for detailed comments.
-
 import re
 import urllib
-import LeslieShenFinalProj_updated  # allows us to use the SGMLParser subclasses from LeslieShenFinalProj.py
+import MusicCoverage  # allows us to use the SGMLParser subclasses from MusicCoverage.py
 
 def testForkURLs():
     '''Tests getForkURLs for just two pages.'''
@@ -102,7 +95,7 @@ def testStoneInfo():
         myURLFile = urllib.urlopen(url)
         myString = myURLFile.read()
         myURLFile.close()
-        artistparser = LeslieShenFinalProj_updated.artistGetter()
+        artistparser = MusicCoverage.artistGetter()
         artistparser.feed(myString)
         artistparser.close()
         artistlist = artistparser.artists
@@ -221,7 +214,7 @@ def testGetGenre(artistname):
     myString = re.sub('<!(.*)endi','',myString)
     
     genrelist = []
-    genreparser = LeslieShenFinalProj_updated.genreGetter()
+    genreparser = MusicCoverage.genreGetter()
     genreparser.feed(myString)
     genreparser.close()
     genrelistrough = genreparser.genres
